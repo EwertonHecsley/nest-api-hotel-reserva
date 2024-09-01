@@ -8,7 +8,7 @@ type EmployeeType = {
     password: string
 }
 
-export default class Employee extends Entity<EmployeeType> {
+export class Employee extends Entity<EmployeeType> {
 
     static create(data: EmployeeType, id?: Identity) {
         return new Employee(data, id)
