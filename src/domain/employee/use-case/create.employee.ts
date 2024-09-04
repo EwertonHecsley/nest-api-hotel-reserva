@@ -3,7 +3,7 @@ import { InvalidEmailError } from "../../errors/custom/invalid.email.error";
 import { NotAllowadError } from "../../errors/custom/not.allowad.error";
 import { Either, left, right } from "../../errors/either/either";
 import Email from "../../shared/value-object/email";
-import Employee from "../entities/employee.entity";
+import { Employee } from "../entities/employee.entity";
 import { HashRepository } from "../services/hash.repository";
 
 type Request = {
@@ -14,7 +14,7 @@ type Request = {
 
 type Response = Either<InvalidEmailError | NotAllowadError, Employee>
 
-export class CreateRoomUseCase {
+export class CreateEmployeeUseCase {
 
     constructor(
         private employeeRepository: EmployeeRepository,
