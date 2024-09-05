@@ -1,4 +1,5 @@
 import { CreateEmployeeUseCase } from "@/domain/employee/use-case/create.employee";
+import { EmployeePresenter } from "@/infra/presenters/employee.presenter";
 import { BadRequestException, Body, Controller, HttpStatus, Post, Res } from "@nestjs/common";
 import { Response } from "express";
 
@@ -22,6 +23,6 @@ export class EmployeeController {
             throw new BadRequestException(result.value.message);
         }
 
-        return response.status(HttpStatus.OK).json(result);
+        return EmployeePresenter.toHTTP(result.value);
     }
 }
