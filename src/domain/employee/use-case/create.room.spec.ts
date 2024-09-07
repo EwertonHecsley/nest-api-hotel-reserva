@@ -1,5 +1,5 @@
 import { InMemoryRoomRepository } from "../../../../test/repositories/in-memory.room.repository";
-import Identity from "../../../utils/entities/generic.identity";
+import Identity from "../../../core/entities/generic.identity";
 import Money from "../../shared/value-object/money";
 import { CreateRoomUseCase } from "./create.room";
 

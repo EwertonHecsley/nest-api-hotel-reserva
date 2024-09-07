@@ -1,7 +1,7 @@
 import { Employee } from '../../../../domain/employee/entities/employee.entity';
 import { Employee as EmployeeDatabase } from '@prisma/client';
 import Email from '../../../../domain/shared/value-object/email';
-import Identity from '../../../../utils/entities/generic.identity';
+import Identity from '../../../../core/entities/generic.identity';
 
 export class EmployeePrismaMapper {
     static toDomain(entity: EmployeeDatabase): Employee {

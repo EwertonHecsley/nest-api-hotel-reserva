@@ -1,5 +1,5 @@
-import Entity from '../../../utils/entities/generic.entity';
-import Identity from '../../../utils/entities/generic.identity';
+import Entity from '../../../core/entities/generic.entity';
+import Identity from '../../../core/entities/generic.identity';
 import Email from '../../shared/value-object/email';
 
 type EmployeeType = {

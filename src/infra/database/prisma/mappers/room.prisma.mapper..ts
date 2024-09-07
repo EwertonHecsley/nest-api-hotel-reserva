@@ -1,5 +1,5 @@
 import { Room as RomDatabase } from '@prisma/client';
-import Identity from '../../../../utils/entities/generic.identity';
+import Identity from '../../../../core/entities/generic.identity';
 import Room from '@/domain/employee/entities/room.entity';
 import Money from '@/domain/shared/value-object/money';
 

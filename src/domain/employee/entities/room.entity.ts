@@ -1,5 +1,5 @@
-import Entity from '../../../utils/entities/generic.entity';
-import Identity from '../../../utils/entities/generic.identity';
+import Entity from '../../../core/entities/generic.entity';
+import Identity from '../../../core/entities/generic.identity';
 import { Optional } from '../../../utils/types/opitional.type';
 import Money from '../../shared/value-object/money';
 
