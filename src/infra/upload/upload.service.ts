@@ -6,11 +6,11 @@ export class UploadService extends S3 {
         super(
             {
                 credentials: {
-                    accessKeyId: "",
-                    secretAccessKey: ""
+                    accessKeyId: process.env.S3_KEY_ID,
+                    secretAccessKey: process.env.S3_ACCESS_KEY
                 },
-                region: '',
-                endpoint: ''
+                region: process.env.S3_REGION,
+                endpoint: process.env.S3_ENDPOINT
             }
         )
     }
@@ -20,7 +20,7 @@ export class UploadService extends S3 {
             {
                 client: this,
                 params: {
-                    Bucket: '',
+                    Bucket: process.env.S3_BUCKET,
                     Key: `uploads/${name}`,
                     Body: buffer,
                     ContentType: type,
